@@ -2,9 +2,9 @@
 <html>
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
-  <title>linux | 行走江湖</title>
-  <meta name="keywords" content=" linux mysql , linux tomcat , linux jdk ">
-  <meta name="description" content="linux | 行走江湖">
+  <title>Vue | 行走江湖</title>
+  <meta name="keywords" content=" 前端 ">
+  <meta name="description" content="Vue | 行走江湖">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="keywords" content="测试">
 <meta property="og:type" content="article">
@@ -437,9 +437,9 @@
 </aside>
 <div class="post">
     <div class="pjax">
-        <article id="post-linux" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-前端" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">linux</h1>
+        <h1 class="article-title">Vue</h1>
     
     <div class="article-meta">
         
@@ -447,25 +447,21 @@
         
         <span class="book">
             
-                <a href="javascript:" data-rel="linux">linux</a>
+                <a href="javascript:" data-rel="前端">前端</a>
             
         </span>
         
         
         <span class="tag">
             
-            <a href="javascript:" class="color2">linux mysql</a>
-            
-            <a href="javascript:" class="color3">linux tomcat</a>
-            
-            <a href="javascript:" class="color5">linux jdk</a>
+            <a href="javascript:" class="color3">前端</a>
             
         </span>
         
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2019-09-08 21:47:47'>2019-09-08 21:46</time>
+        创建时间:<time class="date" title='更新时间: 2019-10-11 23:27:13'>2018-10-11 23:22</time>
         
     </div>
     <div class="article-meta">
@@ -487,7 +483,7 @@
     
     <div class="toc-ref">
     
-        
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-vue-js的使用"><span class="toc-text">1.vue.js的使用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-vue-js常用指令"><span class="toc-text">2.vue.js常用指令</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -502,7 +498,25 @@
 </div>
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h2 id="1-vue-js的使用"><a href="#1-vue-js的使用" class="headerlink" title="1.vue.js的使用"></a>1.vue.js的使用</h2><pre><code>(1)创建一个HTML，编写HTML，引入vue类库(vue.main.js)
+(2)编写视图部分的代码(用户界面,只负责展示)
+(3)编写VM(ViewModel)以及其中的Model
+(4)刷新页面运行程序,vue.js(VM)部分实现将model中的数据展示在view中</code></pre><h2 id="2-vue-js常用指令"><a href="#2-vue-js常用指令" class="headerlink" title="2.vue.js常用指令"></a>2.vue.js常用指令</h2><pre><code>(1)v-model
+   实现双向数据绑定：
+     a.有模型数据绑定到DOM对象,模型数据的值改变,Dom对象的值自动改变
+     b.由DOM对象绑定到模型数据,Dom对象的值改变,模型数据的值改变
+     c.v-model只能在在如下元素中使用:input,select,textarea,compoments(vue中的组件)
+(2)v-text
+    v-text可以将一个变量的值渲染到指定的元素中,可以解决差值表达式闪烁的问题    
+(3)v-on
+    v-on 是监听用户的事件
+(4)v-bind(简写:&apos;:&apos;)作用
+    a.可以将数据对象绑定在dom的任意属性中
+    b.可以给dom对象绑定一个或多个特性,列如动态绑定style和class
+    例子:
+        &lt;img v-bind:src=&quot;imageSrc&quot;&gt; 或者 &lt;img :src=&quot;imageSrc&quot;&gt;
+        &lt;div v-bind:style=&quot;{foontSize:size+&apos;px&apos;}&quot;&gt;&lt;/div&gt; 或者 &lt;div:style=&quot;{foontSize:size+&apos;px&apos;}&quot;&gt;&lt;div&gt;
+(5)v-if和v-for的用法</code></pre>
       
        
     </div>

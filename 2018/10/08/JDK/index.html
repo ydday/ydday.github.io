@@ -2,9 +2,9 @@
 <html>
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
-  <title>linux | 行走江湖</title>
-  <meta name="keywords" content=" linux mysql , linux tomcat , linux jdk ">
-  <meta name="description" content="linux | 行走江湖">
+  <title>JDK 1.8 | 行走江湖</title>
+  <meta name="keywords" content=" JDK ">
+  <meta name="description" content="JDK 1.8 | 行走江湖">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="keywords" content="测试">
 <meta property="og:type" content="article">
@@ -437,9 +437,9 @@
 </aside>
 <div class="post">
     <div class="pjax">
-        <article id="post-linux" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-JDK" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">linux</h1>
+        <h1 class="article-title">JDK 1.8</h1>
     
     <div class="article-meta">
         
@@ -447,25 +447,21 @@
         
         <span class="book">
             
-                <a href="javascript:" data-rel="linux">linux</a>
+                <a href="javascript:" data-rel="JDK">JDK</a>
             
         </span>
         
         
         <span class="tag">
             
-            <a href="javascript:" class="color2">linux mysql</a>
-            
-            <a href="javascript:" class="color3">linux tomcat</a>
-            
-            <a href="javascript:" class="color5">linux jdk</a>
+            <a href="javascript:" class="color4">JDK</a>
             
         </span>
         
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2019-09-08 21:47:47'>2019-09-08 21:46</time>
+        创建时间:<time class="date" title='更新时间: 2019-10-08 19:22:04'>2018-10-08 19:15</time>
         
     </div>
     <div class="article-meta">
@@ -487,7 +483,7 @@
     
     <div class="toc-ref">
     
-        
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#JDK1-8的新特性"><span class="toc-text">JDK1.8的新特性</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#关于Optional："><span class="toc-text">关于Optional：</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -502,7 +498,18 @@
 </div>
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h2 id="JDK1-8的新特性"><a href="#JDK1-8的新特性" class="headerlink" title="JDK1.8的新特性"></a>JDK1.8的新特性</h2><ol>
+<li><h3 id="关于Optional："><a href="#关于Optional：" class="headerlink" title="关于Optional："></a>关于Optional：</h3>Optional是jdk1.8引入的类型，Optional是一个容器对象，它包括了我们需要的对象，使用isPresent方法判断所包<br>含对象是否为空，isPresent方法返回false则表示Optional包含对象为空，否则可以使用get()取出对象进行操作。<br>Optional的优点是：<br>1、提醒你非空判断。<br>2、将对象非空检测标准化。<br>3、列子：<pre><code>@Test
+public void testUpdate() {
+    Optional&lt;CmsPage&gt; optional = cmsPageRepository.findOne(&quot;5b17a34211fe5e2ee8c116c9&quot;);
+    if(optional.isPresent()){
+     CmsPage cmsPage = optional.get();    
+     cmsPage.setPageName(&quot;测试页面01&quot;);    
+     cmsPageRepository.save(cmsPage);    
+    }    
+}</code></pre></li>
+</ol>
+
       
        
     </div>
