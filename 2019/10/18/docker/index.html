@@ -2,9 +2,9 @@
 <html>
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
-  <title>linux | 行走江湖</title>
-  <meta name="keywords" content=" linux mysql , linux tomcat , linux jdk ">
-  <meta name="description" content="linux | 行走江湖">
+  <title>docker | 行走江湖</title>
+  <meta name="keywords" content=" 容器 ">
+  <meta name="description" content="docker | 行走江湖">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="Docker 简介 Docker 是一个开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的镜像中，然后发布到任何流行的 Linux或Windows机器上。使用Docker可以更方便低打包、测试以及部署应用程序。 Docker 环境安装 安装yum-utils：yum install -y yum-utils device-mapper-persistent-data lvm2">
 <meta name="keywords" content="容器">
@@ -468,9 +468,9 @@
 </aside>
 <div class="post">
     <div class="pjax">
-        <article id="post-linux" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-docker" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">linux</h1>
+        <h1 class="article-title">docker</h1>
     
     <div class="article-meta">
         
@@ -478,25 +478,21 @@
         
         <span class="book">
             
-                <a href="javascript:" data-rel="linux">linux</a>
+                <a href="javascript:" data-rel="容器">容器</a>
             
         </span>
         
         
         <span class="tag">
             
-            <a href="javascript:" class="color2">linux mysql</a>
-            
-            <a href="javascript:" class="color3">linux tomcat</a>
-            
-            <a href="javascript:" class="color5">linux jdk</a>
+            <a href="javascript:" class="color3">容器</a>
             
         </span>
         
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2019-09-08 21:47:47'>2019-09-08 21:46</time>
+        创建时间:<time class="date" title='更新时间: 2019-10-18 14:18:01'>2019-10-18 14:07</time>
         
     </div>
     <div class="article-meta">
@@ -518,7 +514,7 @@
     
     <div class="toc-ref">
     
-        
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Docker-简介"><span class="toc-text">Docker 简介</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Docker-环境安装"><span class="toc-text">Docker 环境安装</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -533,7 +529,15 @@
 </div>
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h3 id="Docker-简介"><a href="#Docker-简介" class="headerlink" title="Docker 简介"></a>Docker 简介</h3><p> Docker 是一个开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的镜像中，然后发布到任何流行的 Linux或Windows机器上。使用Docker可以更方便低打包、测试以及部署应用程序。</p>
+<h3 id="Docker-环境安装"><a href="#Docker-环境安装" class="headerlink" title="Docker 环境安装"></a>Docker 环境安装</h3><ol>
+<li>安装yum-utils：yum install -y yum-utils device-mapper-persistent-data lvm2</li>
+<li>为yum源添加docker仓库位置：yum-config-manager –add-repo <a href="https://download.docker.com/linux/centos/docker-ce.repo" target="_blank" rel="noopener">https://download.docker.com/linux/centos/docker-ce.repo</a></li>
+<li>安装docker: yum install docker-ce</li>
+<li>启动docker: systemctl start docker</li>
+<li><a href="https://mp.weixin.qq.com/s/d_CuljDTJq680NTndAay8g/" target="_blank" rel="noopener">docker镜像常用命令</a></li>
+</ol>
+
       
        
     </div>
